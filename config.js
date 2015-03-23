@@ -12,6 +12,7 @@ config = {
     production: {
         url: 'http://my-ghost-blog.com',
         mail: {},
+
         fileStorage: false,
         database: {
             client: 'postgres',
@@ -21,7 +22,7 @@ config = {
                   password: process.env.POSTGRES_PASSWORD,
                   database: process.env.POSTGRES_DATABASE,
                   port: '5432'
-            }
+            },
             debug: false
         },
 
